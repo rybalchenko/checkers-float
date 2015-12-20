@@ -1,0 +1,102 @@
+body{
+	background: #ffff8d;
+
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+
+/* Layout */
+.ba-container{
+	margin-top: 30px;
+	border: 2px solid #A2A4A5;
+	background-color: #ffffff;
+	width: 700px;
+	height: 700px;
+}
+
+[class*="-row"] {
+	height: 12.5%;
+}
+
+.ba-cell {
+	width: 12.5%;
+	height: 100%;
+	float: left;
+}
+
+.ba-first-row .ba-cell:nth-child(2n), .ba-second-row .ba-cell:nth-child(2n+1), .ba-third-row .ba-cell:nth-child(2n),
+.ba-fourth-row .ba-cell:nth-child(2n+1), .ba-fifth-row .ba-cell:nth-child(2n), .ba-sixth-row .ba-cell:nth-child(2n+1),
+.ba-seventh-row .ba-cell:nth-child(2n), .ba-eighth-row .ba-cell:nth-child(2n+1) {
+	background-color: #A2A4A5;
+}
+
+.ba-first-row .ba-cell:nth-child(2n):after, .ba-second-row .ba-cell:nth-child(2n+1):after,
+.ba-third-row .ba-cell:nth-child(2n):after {
+	content:"";
+	width: 80%;
+	height: 80%;
+	display: block;
+	background-color: #A71D1D;
+	border-radius: 50%;
+	margin: 10% 0 0 10%;
+	box-shadow: 1px 3px 1px 0 #A74660;
+}
+
+.ba-sixth-row .ba-cell:nth-child(2n+1):after, .ba-seventh-row .ba-cell:nth-child(2n):after,
+.ba-eighth-row .ba-cell:nth-child(2n+1):after {
+	content:"";
+	width: 80%;
+	height: 80%;
+	display: block;
+	background-color: #C0C3C3;
+	border-radius: 50%;
+	margin: 10% 0 0 10%;
+	box-shadow: 1px 3px 1px 0 #f1f1f1;
+}
+
+.ba-container [class*="-row"] div:hover:after {
+	transform: translateY(-18px);
+}
